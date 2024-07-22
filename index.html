@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome to module 7 Online Discussion</h1>
+    <h1>To-Do List</h1>
+    <ul id="taskList">
+        <li class="task">Buy groceries</li>
+        <li class="task">Clean the house</li>
+        <li class="task">Do laundry</li>
+        <li class="task">Walk the dog</li>
+        <li class="task">Read a book</li>
+        <li class="task">Go For Haircut</li>
+        <li class="task">Make credit card bill payment before due</li>
+    </ul>
+
+    <h1>Login</h1>
+    <form id="cookieForm" action="/set-cookies" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>HTML Status Codes</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Numerical Code</th>
+            <th>Purpose</th>
+            <th>Situation</th>
+        </tr>
+        <tr>
+            <td>I'm a teapot</td>
+            <td>418</td>
+            <td>Hyper Text Coffee Pot Control Protocol (HTCPCP) server</td>
+            <td>When a client attempts to brew coffee with a teapot (humorous response)</td>
+        </tr>
+        <tr>
+            <td>Unavailable For Legal Reasons</td>
+            <td>451</td>
+            <td>Resource access is denied for legal reasons</td>
+            <td>When a website refuses to show content due to legal issues such as censorship or copyright violations</td>
+        </tr>
+        <tr>
+            <td>Network Authentication Required</td>
+            <td>511</td>
+            <td>The client needs to authenticate to gain network access</td>
+            <td>When trying to access a network resource that requires authentication, like a Wi-Fi network login page</td>
+        </tr>
+        <tr>
+            <td>Processing</td>
+            <td>102</td>
+            <td>Request has been received and is being processed</td>
+            <td>When a server is handling a request and hasn't completed it yet, but wants to acknowledge it has received the request</td>
+        </tr>
+        <tr>
+            <td>Permanent Redirect</td>
+            <td>308</td>
+            <td>The target resource has been assigned a new permanent URI and any future references to this resource should use one of the enclosed URIs</td>
+            <td>When a web page has permanently moved to a new URL and clients should update their links accordingly</td>
+        </tr>
+    </table>
+
+    <script src="script.js"></script>
+    <script>
+        // Adding DOMContentLoaded event listener
+        document.addEventListener('DOMContentLoaded', function() {
+            // Code from script.js can be placed here if necessary
+        });
+    </script>
+</body>
+</html>
